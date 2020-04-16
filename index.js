@@ -336,7 +336,7 @@ console.log(getModelYears([
 */
 function getCarInfoById(inventory, id) {
   for (let i = 0; i < inventory.length; i++) {
-    if ( id === inventory.id) {
+    if (id === inventory[i].id) {
       return `This is a ${inventory[i].car_make} ${inventory[i].car_model}`;
     }
   }
