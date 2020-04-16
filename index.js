@@ -39,7 +39,7 @@ function sayGoodbye(name) {
   /* code here */
   return `Goodbye, ${name}. Have a great day.`
 }
-console.log(sayGoodbye("Adrian"));
+// console.log(sayGoodbye("Adrian"));
 
 /**
  * ### Challenge `temperatureCtoF`
@@ -58,7 +58,7 @@ console.log(sayGoodbye("Adrian"));
 function temperatureCtoF(celsius) {
   return Math.round(celsius * 9 / 5 + 32);
 }
-console.log(temperatureCtoF(30));
+// console.log(temperatureCtoF(30));
 
 /**
  * ### Challenge `temperatureInF`
@@ -80,11 +80,11 @@ console.log(temperatureCtoF(30));
 function temperatureInF(temp, type) {
   if(type.toUpperCase() === "F"){
     return `${temp}F`;
-  } else if (type.toUpperCase() === "C"){
-    return `${temperatureCtoF(temp)}F`;
+    } else if (type.toUpperCase() === "C"){
+      return `${temperatureCtoF(temp)}F`;
   }
 }
-console.log(temperatureInF(20, "c"));
+// console.log(temperatureInF(20, "c"));
 
 /**
  * ### Challenge `makePersonObject`
@@ -105,7 +105,7 @@ console.log(temperatureInF(20, "c"));
 function makePersonObject(id, name, email) {
   return {id, name, email};
 }
-console.log(makePersonObject(7, "Adrian", "adrian@gmail.com"));
+// console.log(makePersonObject(7, "Adrian", "adrian@gmail.com"));
 
 /**
  * ### Challenge `getName`
@@ -123,7 +123,7 @@ console.log(makePersonObject(7, "Adrian", "adrian@gmail.com"));
 function getName(obj) {
   return `Hello, my name is ${obj.name}.`;
 }
-console.log(getName({ id: 1, name: 'Leia', email: 'leia@leia.com' }))
+// console.log(getName({ id: 1, name: 'Leia', email: 'leia@leia.com' }))
 
 /**
  * ### Challenge `appleIndex`
@@ -147,7 +147,7 @@ function appleIndex(arr) {
     }
   }
 }
-console.log(appleIndex([ 'orange', 'grape', 'apple', 'banana', 'mango' ]));
+// console.log(appleIndex([ 'orange', 'grape', 'apple', 'banana', 'mango' ]));
 
 /**
  * ### Challenge `isItAnApple`
@@ -175,7 +175,7 @@ function isItAnApple(arr) {
   return bool;
   }
 
-console.log(isItAnApple([ 'orange', 'apple', 'apple', 'apples', 'apple', 'mango' ]));
+// console.log(isItAnApple([ 'orange', 'apple', 'apple', 'apples', 'apple', 'mango' ]));
 
 
 /*
@@ -230,6 +230,11 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
+
+//
+//I now realize there is a better way to do this, inventory[index], but I got practice with for-loops so I'm not changing it!
+//
+
 function getCarInfoByIndex(inventory, index) {
   for (let i = 0; i < inventory.length; i++) {
     if (index === i) {
@@ -237,22 +242,22 @@ function getCarInfoByIndex(inventory, index) {
     }
   }
 }
-console.log(getCarInfoByIndex([
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-  { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
-  { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-  { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
-  { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
-  { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
-  { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
-  { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
-  { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
-  { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
-  { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
-  { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
-  { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
-], 5))
+// console.log(getCarInfoByIndex([
+//   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
+//   { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
+//   { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
+//   { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
+//   { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
+//   { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
+//   { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
+//   { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
+//   { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
+//   { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
+//   { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
+//   { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
+//   { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
+//   { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
+// ], 5))
 /**
  * ### Challenge `getLastCarInfo`
  * 
@@ -271,22 +276,22 @@ function getLastCarInfo(arr) {
     }
   }
 }
-console.log(getLastCarInfo([
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-  { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
-  { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-  { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
-  { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
-  { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
-  { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
-  { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
-  { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
-  { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
-  { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
-  { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
-  { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
-]));
+// console.log(getLastCarInfo([
+//   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
+//   { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
+//   { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
+//   { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
+//   { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
+//   { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
+//   { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
+//   { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
+//   { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
+//   { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
+//   { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
+//   { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
+//   { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
+//   { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
+// ]));
 /**
  * ### Challenge `getModelYears`
  * 
@@ -303,22 +308,22 @@ function getModelYears(arr) {
   }
   return years;
 }
-console.log(getModelYears([
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-  { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
-  { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-  { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
-  { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
-  { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
-  { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
-  { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
-  { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
-  { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
-  { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
-  { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
-  { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
-]));
+// console.log(getModelYears([
+//   { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
+//   { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
+//   { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
+//   { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
+//   { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
+//   { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
+//   { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
+//   { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
+//   { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
+//   { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
+//   { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
+//   { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
+//   { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
+//   { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
+// ]));
 
 /**
  * ### Challenge `getCarInfoById`
@@ -341,22 +346,6 @@ function getCarInfoById(inventory, id) {
     }
   }
 }
-console.log(getCarInfoById([
-  { id: 1, car_make: "Lincoln", car_model: "Navigator", car_year: 2009 },
-  { id: 2, car_make: "Mazda", car_model: "Miata MX-5", car_year: 2001 },
-  { id: 3, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
-  { id: 4, car_make: "Honda", car_model: "Accord", car_year: 1983 },
-  { id: 5, car_make: "Mitsubishi", car_model: "Galant", car_year: 1990 },
-  { id: 6, car_make: "Honda", car_model: "Accord", car_year: 1995 },
-  { id: 7, car_make: "Smart", car_model: "Fortwo", car_year: 2009 },
-  { id: 8, car_make: "Audi", car_model: "4000CS Quattro", car_year: 1987 },
-  { id: 9, car_make: "Ford", car_model: "Windstar", car_year: 1996 },
-  { id: 10, car_make: "Mercedes-Benz", car_model: "E-Class", car_year: 2000 },
-  { id: 11, car_make: "Infiniti", car_model: "G35", car_year: 2004 },
-  { id: 12, car_make: "Lotus", car_model: "Esprit", car_year: 2004 },
-  { id: 13, car_make: "Chevrolet", car_model: "Cavalier", car_year: 1997 },
-  { id: 14, car_make: "Dodge", car_model: "Ram Van 1500", car_year: 1999 }
-], 14));
 
 /**
  * ### Challenge `getOlderCars`
@@ -372,8 +361,15 @@ console.log(getCarInfoById([
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+
+function getOlderCars(arr, year) {
+  const oldCars = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (year >= arr[i].car_year) {
+      oldCars.push(arr[i]);
+    }
+  }
+  return oldCars;
 }
 
 /**
