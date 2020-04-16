@@ -31,6 +31,3 @@ Find the file `index.js` and complete the tasks until all of your tests pass. Do
 
 <img alt='instructions screenshot' src='./instructions.png'>
 
-
-Reminder: 
-[ ] Finish makePersonObject
