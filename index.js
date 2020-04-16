@@ -164,10 +164,17 @@ console.log(appleIndex([ 'orange', 'grape', 'apple', 'banana', 'mango' ]));
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
-}
+function isItAnApple(arr) {
+  const bool = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "apple") {
+      bool.push(true);
+    } else bool.push(false);
+  }
+  return bool;
+  }
 
+console.log(isItAnApple([ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]));
 
 
 /*
